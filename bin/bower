@@ -16,7 +16,7 @@ var cmdList = Object.keys(bower.commands);
 var nodeVer = process.version;
 var reqVer  = pkg.engines.node;
 
-process.title = 'bower';
+process.title = 'enyo-bower';
 
 if (reqVer && !semver.satisfies(nodeVer, reqVer)) {
   throw new Error('Required: node ' + reqVer);
